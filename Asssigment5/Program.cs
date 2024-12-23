@@ -28,6 +28,17 @@ namespace Asssigment5
 
     //}
     #endregion
+
+    #region Q03
+    //[Flags]
+    //enum Permissions
+    //{
+    //    Read = 0,
+    //    Write = 1,
+    //    Delete = 2,
+    //    Execute = 4
+    //} 
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -79,6 +90,32 @@ namespace Asssigment5
             //    Console.WriteLine("Invalid Invalid input. Please enter a valid season name");
             //}
 
+            #endregion
+
+            #region Q03
+            //Assign the following Permissions(Read, write, Delete, Execute) in a form of Enum.
+            //Create Variable from previous Enum to Add and Remove Permission from variable, check if specific Permission is existed inside variable
+            //Permissions P01 = Permissions.Write;
+            //P01 |= Permissions.Read;
+            //Console.WriteLine(P01);
+            //if (P01.HasFlag(Permissions.Read))
+            //{
+            //    Console.WriteLine("Read permission is granted.");
+
+            //}
+            //if (P01.HasFlag(Permissions.Delete))
+            //{
+            //    Console.WriteLine("Delete permission ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Delete permission is not ");
+            //}
+            //P01 &= ~(Permissions.Write);
+
+            //P01 |= Permissions.Execute;
+
+            //Console.WriteLine(P01);
             #endregion
 
         }
