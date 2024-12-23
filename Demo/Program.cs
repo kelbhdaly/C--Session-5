@@ -24,6 +24,8 @@
             // UnSafe Casting [May Throw Exception]
 
             #endregion
+
+
             #region Nullable Value
 
             //Nullable Type 
@@ -111,9 +113,6 @@
             #endregion
 
 
-
-
-
             #region Nullable References Type
             ////Nullable Reference
             //string Message01 = null;
@@ -122,6 +121,41 @@
             //Console.WriteLine(Message02); 
             #endregion
 
+            #region Null propagation Operator
+
+            ////Null propagation Operator ?
+            //double x = default;
+            //Console.WriteLine(x);
+
+            //char C = default;
+            //Console.WriteLine(C);
+
+            ////int[] arr = default;
+
+            //int [] arr = { 1,2,3,4};
+
+            ////Best Rractice 
+            ////if (arr is not null)
+            ////{
+            ////    for (int i = 0; i < arr.Length; i++) //NullReferenceException
+            ////    {
+            ////        Console.WriteLine(arr[i]);
+            ////    }
+
+            ////}
+
+            ////for (int i = 0; (arr != null) && i < arr.Length; i++) //NullReferenceException
+            ////{
+            ////    Console.WriteLine(arr[i]);
+            ////}
+
+
+
+            ////for (int i = 0;  i < arr?.Length; i++) //NullReferenceException
+            ////{
+            ////    Console.WriteLine(arr[i]);
+            ////} 
+            #endregion
 
         }
     }
