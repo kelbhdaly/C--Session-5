@@ -39,6 +39,16 @@ namespace Asssigment5
     //    Execute = 4
     //} 
     #endregion
+
+    #region Q04
+    //enum Colors
+    //{
+    //    Red,
+    //    Green,
+    //    Blue
+
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -118,6 +128,30 @@ namespace Asssigment5
             //Console.WriteLine(P01);
             #endregion
 
+            #region Q04
+            //Create an enum called "Colors" with the basic colors(Red, Green, Blue) as 
+            //its members.Write a C# program that takes a color name as input from the
+            //    user and displays a message indicating whether the input color is a primary color or not.
+
+
+            //Console.WriteLine("Enter a color name");
+            //string ColerInput = Console.ReadLine();
+            //try
+            //{
+            //    Colors color = (Colors)Enum.Parse(typeof(Colors), ColerInput, true);
+            //    Console.WriteLine("is a primary color");
+            //}
+            //catch (Exception ex)
+            //{
+            //    {
+            //        Console.WriteLine("input color is a primary color or not");
+            //        Console.WriteLine(ex.Message);
+            //    }
+            //    #endregion
+
+            //
+            //}
         }
     }
 }
+
