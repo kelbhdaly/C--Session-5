@@ -20,8 +20,10 @@ namespace Demo
     }
     enum Gender
     {
-        Male,
-        Female
+        Male = 2,
+        Female = 3,
+        M = 2,
+        F=3
     }
 
 
@@ -162,7 +164,7 @@ namespace Demo
             // UnSafe Casting [May Throw Exception]
 
             #endregion
-
+            //Done
 
             #region Nullable Value
 
