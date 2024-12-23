@@ -2,6 +2,110 @@
 {
     internal class Program
     {
+
+        ////static void DoSomeCode()
+        ////{
+        ////    int X, Y, Z;
+        ////     X = int.Parse(Console.ReadLine());
+
+        ////    Y = int.Parse(Console.ReadLine());
+
+        ////    Z = X / Y;
+
+        ////    int[] Arr = { 1, 2, 3 };
+
+        ////    Arr[99] = 10; //Out Of Range
+        ////}
+        
+        //static void DoSomeCode()
+        //{
+
+        //    try
+        //    {
+        //        int X, Y, Z;
+        //        X = int.Parse(Console.ReadLine());
+
+        //        Y = int.Parse(Console.ReadLine());
+
+        //        Z = X / Y;
+
+        //        int[] Arr = { 1, 2, 3 };
+
+        //        Arr[99] = 10; //Out Of Range
+        //    }
+        //    catch (Exception E)
+        //    {
+        //        Console.WriteLine(E.Message);
+        //    }
+        //    finally
+        //    {
+        //        Console.WriteLine("Finally");
+        //    }
+        //}
+
+        //static void DoSomeProtectiveCode()
+        //{
+        // try
+        //    {
+
+        //        int X, Y, Z;
+
+        //        bool Flag;
+        //        do
+        //        {
+        //            Console.Write("enter the First number : ");
+        //            Flag = int.TryParse(Console.ReadLine(), out X);
+        //        } while (Flag == false);
+
+        //        do
+        //        {
+        //            Console.Write("enter the First number : ");
+        //            Flag = int.TryParse(Console.ReadLine(), out Y);
+        //        } while (Flag == false && Y != 0);
+
+        //        Z = X / Y;
+
+        //        int[] Arr = { 1, 2, 3, 4 };
+        //        if (99 < Arr?.Length)
+        //        {
+        //            Arr[99] = 10;
+        //        }
+        //    }
+        //    catch(Exception E)
+        //    {
+        //        Console.WriteLine(E.Message);
+        //    }
+
+        //}
+
+
+        static void test()
+        {
+            try
+            {
+                int Num01, Num02, Divid;
+                bool Flag;
+                do
+                {
+                    Console.WriteLine("Enter the Fisrt Number : = ");
+                    Flag = int.TryParse(Console.ReadLine(), out Num01);
+                } while (Flag == false);
+
+                do
+                {
+                    Console.WriteLine("Enter the Fisrt Number : = ");
+                    Flag = int.TryParse(Console.ReadLine(), out Num02);
+                } while (Flag == false && Num02 != 0);
+
+                Divid = Num01 / Num02;
+            }
+            catch(Exception E)
+            {
+                Console.WriteLine(E.Message);
+            }
+
+           
+        }
         static void Main(string[] args)
         {
             #region Boxing&UnBoxing
@@ -157,6 +261,9 @@
             ////} 
             #endregion
 
+
+            //Exception Handling Protective Code
+            DoSomeCode();
         }
     }
 }
