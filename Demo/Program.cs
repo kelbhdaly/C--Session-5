@@ -1,5 +1,39 @@
-﻿namespace Demo
+﻿using System;
+using System.Security.AccessControl;
+
+namespace Demo
 {
+
+    enum Season
+    {
+        Spring,
+        Winter,
+        Summer,
+        Autumn
+    }
+    enum WeekDay
+    {
+        Saturday,
+        SunDay,
+        MonDay,
+
+    }
+    enum Gender
+    {
+        Male,
+        Female
+    }
+
+
+    // Read , Write , Execute , Delete
+    [Flags]
+    enum Permissions
+    {
+        Read =8, 
+        Write =4,
+        Execute =2,
+        Delete =1
+    }
     internal class Program
     {
 
@@ -263,7 +297,29 @@
 
 
             //Exception Handling Protective Code
-            DoSomeCode();
+            //DoSomeCode();
+
+
+            //Common.TypeA typeA = new TypeA(); //internal => Invalid
+            /* Common.TypeB typeB = new Common.TypeB();*/ //valid 
+
+            //Enum : Value Type
+            // Stack 
+            //Season S01 = Season.Autumn;
+
+            //Gender G01 = Gender.Female;
+            //Gender G02 =(Gender) 10;
+            //Console.WriteLine(G02);
+
+            //Gender G01 = (Gender)Enum.Parse(typeof(Gender), Console.ReadLine(),true);
+
+            //Console.WriteLine(G01);
+            Permissions permissions01 = Permissions.Read;
+            permissions01 ^= Permissions.Write; //if not found will be add else remove
+            Console.WriteLine(permissions01);
+            permissions01 |= Permissions.Delete; //add
+            permissions01 &= ~(Permissions.Delete);
+            Console.WriteLine(permissions01);
         }
     }
 }
