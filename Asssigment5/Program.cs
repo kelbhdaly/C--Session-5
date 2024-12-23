@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Asssigment5
 {
@@ -16,6 +17,17 @@ namespace Asssigment5
     //    Sunday
     //}
     #endregion
+
+    #region Q02
+    //enum Season
+    //{
+    //    Spring,
+    //    Summer,
+    //    Autumn,
+    //    Winter
+
+    //}
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -27,6 +39,44 @@ namespace Asssigment5
             //foreach (WeekDays days   in Enum.GetValues(typeof(WeekDays)))
             //{
             //    Console.WriteLine(days);
+            //}
+
+            #endregion
+
+            #region Q02
+            //Create an enum called "Season" with the four seasons(Spring, Summer, Autumn, Winter) as its members.Write a
+            //    C# program that takes a season name as input from the user and displays the corresponding month range for that season.
+            //    Note range for seasons 
+            //    ( spring march to may , summer june to august , autumn September to November , winter December to February)
+            //Console.WriteLine("Enter the Number Or Name Of Season");
+            //Season season = (Season)Enum.Parse(typeof(Season), Console.ReadLine(), true);
+            //try
+            //{
+
+
+            //    switch (season)
+
+            //    {
+            //        case Season.Spring:
+            //            Console.WriteLine("spring march to may");
+            //            break;
+            //        case Season.Summer:
+            //            Console.WriteLine("summer june to august");
+            //            break;
+            //        case Season.Winter:
+            //            Console.WriteLine("winter December to February");
+            //            break;
+            //        case Season.Autumn:
+            //            Console.WriteLine("autumn September to November");
+            //            break;
+            //        default:
+            //            Console.WriteLine("Invalid season");
+            //            break;
+            //    }
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Invalid Invalid input. Please enter a valid season name");
             //}
 
             #endregion
