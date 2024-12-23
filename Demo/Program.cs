@@ -43,10 +43,10 @@
             //int? y = x;
 
 
-            int? x;
-            x = null;
+            //int? x;
+            //x = null;
 
-            int y;
+            //int y;
 
             //UnBoxing 
             //May Throw Exeption
@@ -84,7 +84,45 @@
             //===========================
 
             /*y = x ?? 0; *///Syntax Sugar :x is not null ? x.Value : 0; 
+
+
+
+
+            //int Num = 5;
+            //int? Num2;
+            //Num2 = Num;
+
+            //int? Num = 5;
+            //int Num2 =(int) Num; //UnBoxing
+
+
+            //int? Num;
+            //Num = null;
+            //int Num2;
+            //if(Num is not null)
+            //{
+            //    Num2 = (int)Num;
+            //}
+            //else
+            //{
+            //    Num2 = 0;
+            //}
+            //Console.WriteLine(Num2);
             #endregion
+
+
+
+
+
+            #region Nullable References Type
+            ////Nullable Reference
+            //string Message01 = null;
+            //string? Message02 = null;
+            //Console.WriteLine(Message01.Length);
+            //Console.WriteLine(Message02); 
+            #endregion
+
+
         }
     }
 }
